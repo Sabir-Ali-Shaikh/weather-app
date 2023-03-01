@@ -1,0 +1,36 @@
+body {
+background-color: rgb(0, 38, 255);
+height: 100vh;
+color: white;
+
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+
+  width: 40%;
+  margin: auto;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.icon i{
+  font-size: 3rem;
+  padding: 20px;
+  color: rgb(234, 255, 0) ;
+}
+
+.temp-icon {
+  width: 400px;
+  display: flex;
+}
+
+.temp {
+
+  font-size: 4rem;
+}
