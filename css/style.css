@@ -18,21 +18,29 @@ body {
   align-items: center;
 }
 
-.city {
-  padding: 20px;
-  font-size: 5rem;
+.feel {
+  color: aquamarine;
 }
+
+.city {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
 .container {
   width: 40%;
   margin: auto;
   flex-direction: column;
   border-radius: 10px;
 }
+
 .quote {
   text-align: center;
-}
-.icon {
-  width: 30%;
 }
 
 .more-info {
@@ -61,4 +69,86 @@ body {
 
 .img-icon {
   width: 100%;
+}
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.tooltip .top {
+  width: 50%;
+  top: 120%;
+  left: 50%;
+  transform: translate(-30%, -100%);
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #009cdc;
+  font-weight: normal;
+  font-size: 14px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.tooltip:hover .top {
+  display: block;
+}
+
+@media (min-width: 300px) {
+  .top-nav {
+    width: 90%;
+    margin: auto;
+  }
+
+  .top-nav a {
+    width: 7%;
+  }
+
+  .top-nav a img {
+    width: 100%;
+  }
+
+  .tooltip input {
+    width: 90%;
+    font-size: 1.7rem;
+  }
+
+  .more-info {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .icon {
+    width: 40%;
+  }
+}
+
+@media (min-width: 820px) {
+  .tooltip input {
+    font-size: 4rem;
+  }
+
+  .top-nav a {
+    width: 5%;
+  }
+
+  .more-info {
+    flex-direction: row;
+  }
+
+  .container {
+    width: 40%;
+  }
+
+  .icon {
+    width: 30%;
+  }
 }

@@ -1,59 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>weather app</title>
-</head>
-<body>
-    <h3 class=" city center ">
-    </h3>
-    <div class="container  center ">
-        <div class="temp-icon">
-            <div class="icon">
-                <img src="" alt="" class="img-icon">
-            </div>
-            <div class="bottom">
-                <h3 class="temp  ">
-                </h3>
-                <h4 class="feel ">
-                </h4>
+  </head>
+  <body>
+    <div class="center top-nav">
+      <a href="#"><img src="./assets/nav/up-icon.svg" alt="up-icon" /></a>
+      <div class="tooltip">
+        <input type="text" class="city" />
 
-            </div>
-         
-        </div>
-        <span class="font quote">
-            Make the most of this nice weather that I generated for you or else
-        </span>
-        <div class="more-info">
-            <h5 class="country font">
-            </h5>
-           
-            <h5 class="text font ">
-            </h5>
-            <h5 class="longitude font ">
-            </h5>
-            <h5 class="latitude font ">
-            </h5>
-
-        </div>
-    
-       
-
+        <div class="top">Enter city</div>
+      </div>
+      <a href="#"><img src="./assets/nav/alert-icon.svg" alt="up-icon" /></a>
     </div>
-   
 
+    <div class="container center">
+      <div class="temp-icon">
+        <div class="icon">
+          <img src="" alt="" class="img-icon" />
+        </div>
+        <div class="temp-info">
+          <h4 class="temp"></h4>
+          <h4 class="feel"></h4>
+        </div>
+      </div>
+      <span class="font quote">
+        Make the most of this nice weather that I generated for you or else
+      </span>
+      <div class="more-info">
+        <h5 class="country font"></h5>
 
+        <h5 class="text font"></h5>
+        <h5 class="longitude font"></h5>
+        <h5 class="latitude font"></h5>
+      </div>
+    </div>
 
-
-
-  
     <script src="./script/script.js"></script>
-</body>
+  </body>
 </html>
