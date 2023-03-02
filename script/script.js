@@ -21,6 +21,7 @@ let latitude = document.querySelector('.latitude')
 let icon = document.querySelector('.icon img')
 let path;
 
+
 function weatherInfo() {
     locName.innerHTML = ` ${response.location.name}`
     country.innerHTML = `Country:  ${response.location.country}`
