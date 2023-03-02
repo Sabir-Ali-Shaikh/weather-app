@@ -1,6 +1,6 @@
 let response;
 async function getWeather() {
-     response = await fetch('http://api.weatherapi.com/v1/current.json?key=0c80b2b56f1943ada19100744230103&q=kolkata&aqi=no').then((data) => {
+     response = await fetch('http://api.weatherapi.com/v1/current.json?key=0c80b2b56f1943ada19100744230103&q=san%20francisco&aqi=no').then((data) => {
         console.log(data);
 
         return data.json()
@@ -11,7 +11,6 @@ async function getWeather() {
 getWeather() 
 
 
-const sunny =`<i class=" fas fa-solid fa-cloud-sun"></i>`
 let locName= document.querySelector('.city')
 let currentTemp= document.querySelector('.temp')
 let country= document.querySelector('.country')
@@ -32,7 +31,6 @@ function weatherInfo(){
     currentTemp.innerHTML=`${response.current
         .temp_c 
     } <sup>o</sup>`
-    icon.innerHTML=sunny
     
 
     
