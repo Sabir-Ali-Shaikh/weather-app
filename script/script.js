@@ -1,6 +1,6 @@
 let response;
 async function getWeather() {
-    response = await fetch('http://api.weatherapi.com/v1/current.json?key=0c80b2b56f1943ada19100744230103&q=san%20francisco&aqi=no').then((data) => {
+    response = await fetch('http://api.weatherapi.com/v1/current.json?key=0c80b2b56f1943ada19100744230103&q=san+francisco&aqi=no').then((data) => {
         console.log(data);
 
         return data.json()
@@ -32,10 +32,10 @@ function weatherInfo() {
     currentTemp.innerHTML = `${response.current
         .temp_c
         } <sup>o</sup>`
-    path = response.current.condition.icon.replace('//cdn.weatherapi.com', '../assets')
-    icon.src = path
+    // path = response.current.condition.icon.replace('//cdn.weatherapi.com', '../assets')
+    icon.src = response.current.condition.icon
 
-    console.log(path);
+    console.log(icon);
 
 }
 
