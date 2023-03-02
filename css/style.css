@@ -8,7 +8,6 @@
 
 body {
   background-color: #3937fa;
-  height: 100vh;
   color: white;
 }
 
@@ -18,7 +17,7 @@ body {
   align-items: center;
 }
 
-.feel {
+.feel-like {
   color: aquamarine;
 }
 
@@ -53,7 +52,7 @@ body {
   display: flex;
   justify-content: center;
   width: 80%;
-  gap: 10px;
+  gap: 30px;
   align-items: center;
 }
 
@@ -78,11 +77,11 @@ body {
 }
 
 .tooltip .top {
-  width: 50%;
+  width: 40%;
   top: 127%;
   left: 43%;
   transform: translate(-30%, -100%);
-  padding: 10px 20px;
+  padding: 10px;
   color: #ffffff;
   background-color: #009cdc;
   font-weight: normal;
@@ -90,7 +89,6 @@ body {
   border-radius: 8px;
   position: absolute;
   z-index: 99999999;
-  box-sizing: border-box;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
   display: none;
 }
@@ -99,7 +97,7 @@ body {
   display: block;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 200px) {
   .top-nav {
     width: 90%;
     margin: auto;
