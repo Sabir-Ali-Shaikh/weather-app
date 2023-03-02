@@ -8,7 +8,12 @@ async function getWeather(locationInput) {
         return data.json();
     });
     console.log(response);
-    weatherInfo();
+    if (response.error) {
+        alert(response.error.message)
+    }
+    else {
+        weatherInfo();
+    }
 }
 
 let locName = document.querySelector(".city");
@@ -30,15 +35,15 @@ function weatherInfo() {
     feel.innerHTML = `Feels Like ${response.current.feelslike_c}<sup>°</sup>`;
     currentTemp.innerHTML = `${response.current.temp_c} <sup>°</sup>`;
     path = response.current.condition.icon.replace('//cdn.weatherapi.com', '../assets')
-    path = path.replace('.png','.svg')
+    path = path.replace('.png', '.svg')
     // icon.src = response.current.condition.icon;
-    icon.src=path
+    icon.src = path
 
     console.log(icon);
 }
 
-locName.addEventListener('keyup',(e)=>{
-    if(e.key=="Enter"){
+locName.addEventListener('keyup', (e) => {
+    if (e.key == "Enter") {
         getWeather(e.target.value)
 
     }
